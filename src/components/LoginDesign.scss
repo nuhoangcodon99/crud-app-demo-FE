@@ -1,0 +1,64 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 30%;
+
+  .header {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-weight: 600;
+  }
+
+  .input-space {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    gap: 8px;
+    .input-box {
+      background-color: rgb(236, 236, 236);
+      border-width: 1px;
+      border-radius: 0.25rem;
+      padding: 10px;
+      outline: none;
+
+      .input-password {
+        background-color: rgb(236, 236, 236);
+        outline: none;
+        width: 92%;
+      }
+    }
+  }
+
+  button {
+    background-color: rgb(214, 214, 214);
+    padding: 10px 0;
+    border-radius: 0.25rem;
+    &.active {
+      background-color: #fe2c55;
+      color: white;
+    }
+  }
+
+  button[disable=disable], button:disabled {
+    cursor: not-allowed;
+  }
+
+  .back {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login-container {
+    width: 100%;
+  }
+}
